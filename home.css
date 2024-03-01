@@ -1,0 +1,283 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  color: black;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.logo img {
+  height: 30px;
+  border-radius: 10px;
+  margin-left: 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 3rem;
+}
+
+.left {
+  margin-right: 18rem;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: rgb(235, 85, 31);
+  text-decoration: underline;
+}
+
+.icons img {
+  height: 28px;
+  width: 28px;
+  margin-right: 1.5rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  border-radius: 50%;
+  padding: 1.2rem;
+}
+
+.products {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  background-color: #f7f7f7;
+}
+
+.product-2 {
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+
+.product-2 div {
+  width: 28%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-2 a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.product-2 a:hover {
+  color: rgb(235, 85, 31);
+  text-decoration: underline;
+}
+
+.gallery-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+
+.gallery-container div {
+  background-color: white;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.big-pic {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.big-pic div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  height: 328px;
+  border-radius: none;
+}
+
+.small-pic {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1.2rem;
+}
+
+.small-pic div {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #f7f7f7;
+  padding-bottom: 5rem;
+}
+
+.card {
+  width: 28rem !important;
+  padding: 20px;
+}
+
+.card-body {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+footer {
+  background-color: #161414;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.footer-section {
+  width: 20%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 5px;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #ccc;
+}
+
+.social-media li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.copyright a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    width: 100%;
+  }
+
+  .footer-section {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 540px) {
+  .footer-section {
+    width: 100%;
+  }
+}
+form {
+  display: flex;
+  background-color: #000;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+input[type="email"] {
+  flex-grow: 1;
+  padding: 10px;
+  color: white;
+  background-color: #000;
+  border: none;
+}
+
+input[type="email"]::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  background-color: #000;
+  border: none;
+  color: white;
+}
+
+button[type="submit"]:after {
+  content: "\003E";
+  font-size: 20px;
+}
